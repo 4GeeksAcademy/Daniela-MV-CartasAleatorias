@@ -6,12 +6,13 @@ body{
     justify-content: center;
 }
 
-#boton{
+.boton{
 background-color: pink;
 width: 100px;
 height: 70px;
 border-radius: 20%;
 border: solid black;
+margin-left: 50px;
 }
 
 #card{
@@ -20,20 +21,28 @@ border: solid black;
     width: 300px;
     height: 450px;
     border-radius: 25px;
+    display: inline-block;
+    justify-content: space-around;
 }
 
-/* #figureUp{
-    font-size: 25%;
+#figureUp{
+    height: 25%;
+    font-size: 4.5rem;
     text-align: left;
+    padding: 7px;
 }
 
 #number{
-    font-size: 50%;
+    height: 50%;
+    font-size: 9rem;
     text-align: center;
+    align-content: center;
 }
 
 #figureButtom{
-    font-size: 25%;
-    text-align: right;
+    height: 25%;
+    font-size: 4.5rem;
+    text-align: left;
     transform: rotate(180deg);
-} */
+    padding:7px;
+} 
