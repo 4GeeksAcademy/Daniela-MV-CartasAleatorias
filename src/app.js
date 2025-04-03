@@ -7,5 +7,11 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let numbers= [2,3,4,5,6,7,8,9,10,K,Q,J,A];
+  let figuras= [ ♦,♥,♠,♣];
+  for(let i= 0; i < numbers.length; i++){
+    for (let j= 0; j < figuras.length; j++){
+      return numbers[i] + figuras[j]
+    }
+  }
 };
