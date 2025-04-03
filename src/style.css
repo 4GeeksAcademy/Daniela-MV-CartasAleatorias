@@ -6,6 +6,14 @@ body{
     justify-content: center;
 }
 
+#boton{
+background-color: pink;
+width: 100px;
+height: 70px;
+border-radius: 20%;
+border: solid black;
+}
+
 #card{
     background-color: white;
     margin-top: 20px;
@@ -13,3 +21,19 @@ body{
     height: 450px;
     border-radius: 25px;
 }
+
+/* #figureUp{
+    font-size: 25%;
+    text-align: left;
+}
+
+#number{
+    font-size: 50%;
+    text-align: center;
+}
+
+#figureButtom{
+    font-size: 25%;
+    text-align: right;
+    transform: rotate(180deg);
+} */
