@@ -19,6 +19,11 @@ border: solid black;
 margin-left: 50px;
 }
 
+.formulario{
+    border: solid yellow;
+    color: white;
+}
+
 #card{
     background-color: white;
     margin-top: 20px;

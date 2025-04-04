@@ -35,4 +35,18 @@ window.onload = function() {
 //Código para que cada 10 segundos se cambie la carta
 setInterval(showCard, 10000);
 
+//Función para cambiar el tamaño de la carta
+let anch= document.getElementById("ancho");
+let alt= document.getElementById("alto");
+let send= document.getElementById("enviar");
+
+function cambiarTamaño(){
+let width = anch.value.trim();
+let height= alt.value.trim();
+if(width)card.style.width=whith;
+if(height)card.style.height=height;
+
+}
+
+send.addEventListener("click", cambiarTamaño);
 }
