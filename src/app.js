@@ -26,7 +26,13 @@ window.onload = function() {
   container.style.color= (onlyFigures === "♦" || onlyFigures === "♥")? "red" : "black";
   }
 
+//  Agregar el evento click para que al presionar el botón se cambie la tarjeta
   boton.addEventListener("click", showCard);
 
+// Llamar a la función para que se ejecute
  showCard();
+
+//Código para que cada 10 segundos se cambie la carta
+setInterval(showCard, 10000);
+
 }
