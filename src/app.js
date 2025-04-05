@@ -38,13 +38,13 @@ setInterval(showCard, 10000);
 //Función para cambiar el tamaño de la carta
 let anch= document.getElementById("ancho");
 let alt= document.getElementById("alto");
-let send= document.getElementById("enviar");
+let send= document.getElementById("env");
 
 function cambiarTamaño(){
-let width = anch.value.trim();
-let height= alt.value.trim();
-if(width)card.style.width=whith;
-if(height)card.style.height=height;
+let width = anch.value;
+let height= alt.value;
+if(width) card.style.width= width;
+if(height) card.style.height= height;
 
 }
 

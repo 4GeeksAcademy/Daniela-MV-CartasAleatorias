@@ -22,6 +22,10 @@ margin-left: 50px;
 .formulario{
     border: solid yellow;
     color: white;
+    width: 250px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
 }
 
 #card{
