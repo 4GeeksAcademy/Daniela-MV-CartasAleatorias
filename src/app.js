@@ -37,10 +37,16 @@ window.onload = function () {
   let send = document.getElementById("enviar");
 
   function changeSize() {
-    let width = callingWidth.value;
-    let height = callingheight.value;
-    if (width) card.style.width = width;
-    if (height) card.style.height = height;
+    let width = parseInt(callingWidth.value);
+    let height = parseInt(callingheight.value);
+    if (width < 200) {
+      width = 200;
+    }
+    if (height < 200) {
+      height = 200;
+    }
+    if (width) card.style.width = width + "px";
+    if (height) card.style.height = height + "px";
 
   }
 
