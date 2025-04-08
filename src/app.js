@@ -17,13 +17,13 @@ window.onload = function() {
   let boton= document.getElementById("btn");
 
   function aleatoryCard(){
-  let onlyNumber= numbers[Math.floor(Math.random() * numbers.length)];
-  let onlyFigures= figures[Math.floor(Math.random() * figures.length)];
+  let aleatoryNumber= numbers[Math.floor(Math.random() * numbers.length)];
+  let aleatoryFigures= figures[Math.floor(Math.random() * figures.length)];
 
-  figuraSup.textContent = onlyFigures;
-  numero.textContent = onlyNumber;
-  figuraInf.textContent = onlyFigures;
-  container.style.color= (onlyFigures === "♦" || onlyFigures === "♥")? "red" : "black";
+  figuraSup.textContent = aleatoryFigures;
+  numero.textContent = aleatoryNumber;
+  figuraInf.textContent = aleatoryFigures;
+  container.style.color= (aleatoryFigures === "♦" || aleatoryFigures === "♥")? "red" : "black";
   }
 
 //  Agregar el evento click para que al presionar el botón se cambie la tarjeta
