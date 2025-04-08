@@ -36,13 +36,13 @@ window.onload = function() {
 setInterval(aleatoryCard, 10000);
 
 //Función para cambiar el tamaño de la carta
-let anch= document.getElementById("ancho");
-let alt= document.getElementById("alto");
+let callingWidth= document.getElementById("ancho");
+let callingheight= document.getElementById("alto");
 let send= document.getElementById("enviar");
 
 function changeSize(){
-let width = anch.value;
-let height= alt.value;
+let width = callingWidth.value;
+let height=  callingheight.value;
 if(width) card.style.width= width;
 if(height) card.style.height= height;
 
