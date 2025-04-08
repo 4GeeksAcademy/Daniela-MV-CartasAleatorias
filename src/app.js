@@ -16,7 +16,7 @@ window.onload = function() {
   let figuraInf= document.getElementById("figureButtom");
   let boton= document.getElementById("btn");
 
-  function showCard(){
+  function aleatoryCard(){
   let onlyNumber= numbers[Math.floor(Math.random() * numbers.length)];
   let onlyFigures= figures[Math.floor(Math.random() * figures.length)];
 
@@ -27,20 +27,20 @@ window.onload = function() {
   }
 
 //  Agregar el evento click para que al presionar el botón se cambie la tarjeta
-  boton.addEventListener("click", showCard);
+  boton.addEventListener("click", aleatoryCard);
 
 // Llamar a la función para que se ejecute
- showCard();
+ aleatoryCard();
 
 //Código para que cada 10 segundos se cambie la carta
-setInterval(showCard, 10000);
+setInterval(aleatoryCard, 10000);
 
 //Función para cambiar el tamaño de la carta
 let anch= document.getElementById("ancho");
 let alt= document.getElementById("alto");
 let send= document.getElementById("enviar");
 
-function cambiarTamaño(){
+function changeSize(){
 let width = anch.value;
 let height= alt.value;
 if(width) card.style.width= width;
@@ -48,5 +48,5 @@ if(height) card.style.height= height;
 
 }
 
-send.addEventListener("click", cambiarTamaño);
+send.addEventListener("click", changeSize);
 }
