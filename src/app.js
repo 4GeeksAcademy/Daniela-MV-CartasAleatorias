@@ -26,16 +26,12 @@ window.onload = function () {
     container.style.color = (aleatoryFigures === "♦" || aleatoryFigures === "♥") ? "red" : "black";
   }
 
-  // Llamar a la función para que se ejecute
   aleatoryCard();
 
-  //  Agregar el evento click para que al presionar el botón se cambie la tarjeta
   boton.addEventListener("click", aleatoryCard);
 
-  //Código para que cada 10 segundos se cambie la carta
   setInterval(aleatoryCard, 10000);
 
-  //Función para cambiar el tamaño de la carta
   let callingWidth = document.getElementById("ancho");
   let callingheight = document.getElementById("alto");
   let send = document.getElementById("enviar");
